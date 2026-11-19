@@ -1,9 +1,9 @@
 {
   "notebook": "00-data-acquisition.ipynb",
-  "ingested_at_utc": "2026-11-17T19:50:46.462371+00:00",
+  "ingested_at_utc": "2026-11-19T16:29:05.982460+00:00",
   "ingestion_version": "1.0.0",
   "random_seed": 42,
-  "elapsed_seconds": 873.111,
+  "elapsed_seconds": 9085.036,
   "parameters": {
     "VALIDATE_NPZ_VALUES": true,
     "CSV_CHUNK_SIZE": 50000,
@@ -62,8 +62,8 @@
     "y_columns": [
       "label"
     ],
-    "sub01_head10_max_abs_diff": 1.988336318509143e-10,
-    "sub01_head10_labels_match": true,
+    "sub01_head_max_abs_diff": 1.988336318509143e-10,
+    "sub01_head_labels_match": true,
     "y_data_rows": 7201800,
     "parquet_rows_total": 7201800,
     "y_matches_parquet_total": true,
@@ -72,7 +72,6 @@
   },
   "outputs": {
     "manifest_parquet": "data/manifest.parquet",
-    "summary_csv": "reports/metrics/manifest_summary.csv",
-    "summary_md": "reports/metrics/manifest_summary.md"
+    "summary_csv": "reports/metrics/manifest_summary.csv"
   }
 }

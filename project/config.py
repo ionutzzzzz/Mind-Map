@@ -176,3 +176,18 @@ def atomic_write_parquet(df, target_path: Path, **kwargs) -> Path:
             os.unlink(tmp_name)
         raise
     return target
+
+
+# ===================================================
+# 7. Preprocessing settings & helpers
+# ===================================================
+
+PREPROCESS_CROP_TMIN: float = 0.0
+PREPROCESS_CROP_TMAX: float = 3.0
+PREPROCESS_TARGET_SFREQ_HZ: float = 250.0
+PREPROCESS_DECIM_FACTOR: int = 4
+
+
+def get_clean_epochs_path(subject_id: int) -> Path:
+    """Return path to preprocessed clean epochs NPZ for one subject."""
+    return PROCESSED_DIR / f"clean_epochs_sub_{subject_id:02d}.npz"
