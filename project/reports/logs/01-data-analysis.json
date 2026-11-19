@@ -1,0 +1,54 @@
+{
+  "notebook": "01-data-analysis.ipynb",
+  "analyzed_at_utc": "2026-11-17T20:07:40.357494+00:00",
+  "random_seed": 42,
+  "elapsed_seconds": 137.75,
+  "parameters": {
+    "FLATLINE_STD_THRESHOLD": 1e-08,
+    "EXTREME_VAR_RATIO": 5.0,
+    "LOW_VAR_RATIO": 0.1,
+    "SAMPLE_CORR_TRIALS": 30,
+    "TRACE_EEG_CHANNELS": [
+      "C3",
+      "Cz",
+      "C4",
+      "Fpz"
+    ],
+    "TRACE_AUX_CHANNELS": [
+      "ECG",
+      "EOG1",
+      "EOG4"
+    ]
+  },
+  "package_versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "dask": "2026.8.0",
+    "seaborn": "0.13.2",
+    "matplotlib": "3.11.2"
+  },
+  "subjects_analyzed": [
+    1,
+    2,
+    3
+  ],
+  "subjects_needing_attention": [
+    1,
+    2,
+    3
+  ],
+  "flagged_channels_count": 8,
+  "outputs": {
+    "integritate_csv": "reports/metrics/eda_integritate.csv",
+    "canale_csv": "reports/metrics/eda_canale_statistici.csv",
+    "clase_csv": "reports/metrics/eda_distributie_clase.csv",
+    "summary_md": "reports/metrics/eda_integritate.md",
+    "figures": [
+      "reports/figures/eda/class_distribution_by_session.png",
+      "reports/figures/eda/eeg_vs_aux_std_profile.png",
+      "reports/figures/eda/sample_time_traces_sub_01.png",
+      "reports/figures/eda/eeg_channel_correlation_sub_01.png"
+    ]
+  }
+}

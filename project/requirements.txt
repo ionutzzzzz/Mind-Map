@@ -7,4 +7,5 @@ pyarrow
 # hashlib
 matplotlib
 statsmodels
+eeg-toolbox
 scikit-learn

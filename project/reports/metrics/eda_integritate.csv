@@ -1,0 +1,4 @@
+subject_id,pq_rows,pq_trials,pq_samples,rows_ok,nulls,eeg_min,eeg_max,aux_min,aux_max,npz_trials,n_sessions,sessions,match_parquet,n_nan,n_inf,flatline_channels,partial_flatline_channels,extreme_var_eeg,needs_attention
+1,2400600,600,4001,True,0,-0.1648603081703186,0.18685585260391235,-375.0,185.3444366455078,600,3,"0,1,2",True,0,0,0,2,0,True
+2,2400600,600,4001,True,0,-0.19914060831069946,0.19273319840431213,-375.0,226.49810791015625,600,3,"0,1,2",True,0,0,0,2,0,True
+3,2400600,600,4001,True,0,-0.20023514330387115,0.14885523915290833,-375.0,262.51629638671875,600,3,"0,1,2",True,0,0,0,4,0,True

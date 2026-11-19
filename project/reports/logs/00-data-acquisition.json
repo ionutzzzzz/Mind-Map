@@ -1,0 +1,78 @@
+{
+  "notebook": "00-data-acquisition.ipynb",
+  "ingested_at_utc": "2026-11-17T19:50:46.462371+00:00",
+  "ingestion_version": "1.0.0",
+  "random_seed": 42,
+  "elapsed_seconds": 873.111,
+  "parameters": {
+    "VALIDATE_NPZ_VALUES": true,
+    "CSV_CHUNK_SIZE": 50000,
+    "CSV_COUNT_ALL_X_ROWS": false,
+    "RUN_MOABB_REEXTRACTION": false
+  },
+  "package_versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "dask": "2026.8.0",
+    "pyarrow": "26.0.1",
+    "mne": "1.13.2"
+  },
+  "subjects_discovered": [
+    1,
+    2,
+    3
+  ],
+  "subjects_usable": [
+    1,
+    2,
+    3
+  ],
+  "dask_overview": {
+    "npartitions_total": 9,
+    "n_columns": 68,
+    "dtypes_summary": {
+      "float32": 64,
+      "int32": 3,
+      "string": 1
+    }
+  },
+  "channel_audit": {
+    "channel_type_counts": {
+      "eeg": 59,
+      "ecg": 1,
+      "eog": 4,
+      "total": 64
+    },
+    "channel_map_valid": true,
+    "readme_matches_config_eeg": true,
+    "eeg_missing_in_standard_1005": [],
+    "historical_note_discrepancy": "Nota din prototip mentioneaza 53 canale, dar datele si config.py au 64 canale (59 EEG + 1 ECG + 4 EOG)."
+  },
+  "csv_provenance": {
+    "x_csv_exists": true,
+    "y_csv_exists": true,
+    "x_columns_count": 61,
+    "x_non_channel_columns": [
+      "trial",
+      "timestamp"
+    ],
+    "x_channel_count": 59,
+    "x_channel_range": "ch_0..ch_58",
+    "y_columns": [
+      "label"
+    ],
+    "sub01_head10_max_abs_diff": 1.988336318509143e-10,
+    "sub01_head10_labels_match": true,
+    "y_data_rows": 7201800,
+    "parquet_rows_total": 7201800,
+    "y_matches_parquet_total": true,
+    "x_data_rows": "skipped (CSV_COUNT_ALL_X_ROWS=False)",
+    "conclusion": "X_data.csv si y_data.csv provin din exportul concatenat al celor 3 subiecti (7.201.800 randuri), insa X_data.csv contine doar cele 59 canale EEG (ch_0..ch_58), fara ECG/EOG, fara subject si fara session."
+  },
+  "outputs": {
+    "manifest_parquet": "data/manifest.parquet",
+    "summary_csv": "reports/metrics/manifest_summary.csv",
+    "summary_md": "reports/metrics/manifest_summary.md"
+  }
+}
